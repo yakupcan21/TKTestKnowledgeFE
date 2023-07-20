@@ -1,0 +1,356 @@
+  .top-section {
+    width: 1440px;
+    height: 109px;
+    flex-shrink: 0;
+    background-color: #D9D9D9;
+
+  }
+
+  .left {
+    width: 87px;
+    height: 87px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+  }
+
+  .right {
+    width: 83px;
+    height: 83px;
+    float: right;
+    margin-top: 10px
+
+  }
+
+  .option1 {
+    width: 984px;
+    height: 170px;
+    flex-shrink: 0;
+    background: #F5F5F5;
+    margin-top: 62px;
+    margin-left: 222px;
+    margin-right: 234px;
+
+  }
+  
+  .option1 hr{
+    position: absolute;
+    left: 350px;
+    top: 260px;
+  }
+
+  .option1 .dep {
+    position: absolute;
+    left: 255px;
+    top: 215px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option1 .arr {
+    position: absolute;
+    left: 560px;
+    top: 215px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option1 .flight_no {
+    position: absolute;
+    left: 410px;
+    top: 220px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option1 .time {
+    position: absolute;
+    left: 700px;
+    top: 240px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option1 .price {
+    position: absolute;
+    left: 1000px;
+    top: 225px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option2 {
+    width: 984px;
+    height: 170px;
+    flex-shrink: 0;
+    background: #F5F5F5;
+    margin-top: 20px;
+    margin-left: 222px;
+    margin-right: 234px;
+
+  }
+  
+  .option2 hr{
+    position: absolute;
+    left: 350px;
+    top: 450px;
+  }
+
+  .option2 .dep {
+    position: absolute;
+    left: 255px;
+    top: 405px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option2 .arr {
+    position: absolute;
+    left: 560px;
+    top: 405px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option2 .flight_no {
+    position: absolute;
+    left: 410px;
+    top: 410px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option2 .time {
+    position: absolute;
+    left: 700px;
+    top: 430px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option2 .price {
+    position: absolute;
+    left: 1000px;
+    top: 405px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option3 {
+    width: 984px;
+    height: 170px;
+    flex-shrink: 0;
+    background: #F5F5F5;
+    margin-top: 20px;
+    margin-left: 222px;
+    margin-right: 234px;
+
+  }
+
+  .option3 hr{
+    position: absolute;
+    left: 350px;
+    top: 640px;
+  }
+
+  .option3 .dep {
+    position: absolute;
+    left: 255px;
+    top: 595px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option3 .arr {
+    position: absolute;
+    left: 560px;
+    top: 595px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option3 .flight_no {
+    position: absolute;
+    left: 410px;
+    top: 600px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option3 .time {
+    position: absolute;
+    left: 700px;
+    top: 620px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option3 .price {
+    position: absolute;
+    left: 1000px;
+    top: 605px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .option4 {
+    width: 984px;
+    height: 170px;
+    flex-shrink: 0;
+    background: #F5F5F5;
+    margin-top: 20px;
+    margin-left: 222px;
+    margin-right: 234px;
+
+  }
+
+  .option4 hr{
+    position: absolute;
+    left: 350px;
+    top: 830px;
+  }
+
+  .option4 .dep {
+    position: absolute;
+    left: 255px;
+    top: 785px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option4 .arr {
+    position: absolute;
+    left: 560px;
+    top: 785px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option4 .flight_no {
+    position: absolute;
+    left: 410px;
+    top: 790px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option4 .time {
+    position: absolute;
+    left: 700px;
+    top: 810px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option4 .price {
+    position: absolute;
+    left: 1000px;
+    top: 795px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .option5{
+    width: 198px;
+    height: 125px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 1px solid #000;
+    background: #F00;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);    
+    margin-top: 52px;
+    margin-left: 1008px;
+    margin-right: 234px;
+
+  }
+
+  .option5 p {
+    margin-top: 47px;
+    margin-left: 26px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+  }
