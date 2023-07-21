@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-black {
+  background-color: #323232;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.container-bilet {
+  width: 1080px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header img {
+  width: 50px;
+}
+
+.accepted .details header img{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 420px;
+  padding-top: 20px;
+  width: 200px;
+}
+
+
+.flight-list-container .flight {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+  height: 170px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  margin-top:20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.flight-list-container .flight:hover {
+  background-color: #95f0ac;
+  cursor: pointer;
+}
+
+.flight-list-container .flight.active {
+  background-color: #298B27;
+  color: white;
+}
+
+
+.flight-list-container .flight .departure {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.flight-list-container .flight .arrival {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.flight-list-container .flight .flight-no {
+  border-bottom: 1px solid black;
+  width: 250px;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+
+.flight-list-container .flight .price {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.submit {
+  margin-top: 20px;
+  float: right;
+  font-size: 30px;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: red;
+}
+
+.accepted .flight{
+  display: flex;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.accepted .details .payment {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.container-bilet .accepted .details{
+  justify-content: space-between;
+  height: 1080px;
+  background-color: #F5F5F5;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px
+}
+
+.accepted .details .flight {
+  padding-left: 20px;
+  padding-top: 20px;
+  justify-content: space-between;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.accepted .details .flight .departure {
+  padding-top: 10px;
+  padding-left: 200px ;
+}
+
+.accepted .details .flight .arrival {
+  padding-top: 10px;
+  padding-right: 200px;
+}
+
+.accepted .details .flight .flight-no {
+  border-bottom: 1px solid black;
+  width: 450px;
+  font-size: 24px;
+  font-weight:600;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.accepted .details .ticket {
+  justify-content: space-between;
+  display: flex;
+  font-size: 34px;
+  font-weight: 700;
+  padding-top: 100px;
+  padding-left: 170px;
+  padding-right: 170px;
+  text-align: center;
+}
+
+.accepted .details .seat {
+  justify-content: space-between;
+  display: flex;
+  font-size: 34px;
+  font-weight: 700;
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-top: 100px;
+  text-align: center; 
+}
+
+.accepted .details .date {
+  justify-content: space-between;
+  display: flex;
+  font-size: 34px;
+  font-weight: 700;
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-top: 100px;
+  text-align: center;
+}
