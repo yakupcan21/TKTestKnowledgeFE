@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html lang="tr-TR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ödeme</title>
-    <link rel="stylesheet" href="odeme.css">
-    <script type="text/javascript" language="javascript" src="odeme.js"></script>
-</head>
-
-<body>
-    <div class="top-section">
-        <img src="1.png" class="left">
+    <link rel="stylesheet" href="Assets\CSS\anasayfa.css" />
+    <script type="text/javascript" language="javascript" src=".js"></script>
+  </head>
+  <body>
+    <div class="container-fluid bg-black">
+      <div class="container">
+        <header>
+          <img src="1.png" alt="Logo" />
+        </header>
+      </div>
     </div>
-
-    <div class="style">
-        <div class="id">
-            <p>T.C. KİMLİK</p>
-                <div class="style1">
-                    <input type="text" id="id" name="id" placeholder="T.C Kimlik numarınızı girin">
-                </div>    
-        </div>
-
-        <div class="id2">
-            <p>Toplam Fiyat</p>
-                <div class="style1">
-                    <input type="text" id="price" name="price" placeholder="Toplam Fiyat">  
-                </div> 
-        </div>
-
-        <div class="id3">
-            <p>Taksit Sayısı</p>
-                <div class="style1">
-                    <input type="text" id="instalaltion" name="instalaltion" placeholder="Taksit Sayısı">               
-                </div> 
-        </div>
-
-        <div class="id4">
-            <p>Kart Sahibinin Adı</p>
-                <div class="style1">
-                    <input type="text" id="fname" name="name" placeholder="Kart Sahibinin Adı">
-                </div> 
-        </div>
-
-        <div class="id5">
-            <p>Kart Numarası</p>
-                <div class="style1">
-                    <input type="text" id="nocard" name="nocard" placeholder="Kart Numarası">
-                </div> 
-        </div>
-
-        <div class="id6">
-            <p>Son Kullanım</p>
-                <div class="style1">
-                    <input type="date" id="lastuse" name="lastuse" placeholder="Son Kullanım">
-                </div> 
-        </div>
-
-        <div class="id7">
-            <p>CVV</p>
-                <div class="style1">
-                    <input type="text" id="cvv" name="cvv" placeholder="CVV">
-                </div> 
+    <div class="container-bilet">
+        <div class="accepted">
+            <div class="payment">
+                <div class="style">
+                    <div class="id">
+                        <div>T.C. KİMLİK
+                            <div class="idstyle">
+                                <input type="text" id="id" name="id" placeholder="T.C Kimlik numarınızı girin"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <div>Toplam Fiyat</div>
+                            <div class="style1">
+                                <input type="text" id="price" name="price" placeholder="Toplam Fiyat" />
+                            
+                                <div class="instalaltion">
+                                    <div>Taksit Sayısı</div>
+                                        <div class="style1">
+                                            <input type="text" id="instalaltion" name="instalaltion" placeholder="Taksit Sayısı" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name">
+                        <div>Kart Sahibinin Adı</div>
+                            <div class="style1">
+                                <input type="text" id="name" name="name" placeholder="Kart Sahibinin Adı" />
+                            </div>
+                    </div>
+                    <div class="card-no">
+                        <div>Kart Numarası</div>
+                            <div class="style1">
+                                <input type="text" id="card-no" name="card-no" placeholder="Kart Numarası" />
+                            </div>
+                    </div>
+                    <div class="id6">
+                        <div>Son Kullanım</div>
+                            <div class="style1">
+                                <input type="date" id="lastuse" name="lastuse" placeholder="Son Kullanım"/>
+                            </div>
+                    </div>
+                    <div class="id7">
+                        <div>CVV</div>
+                            <div class="style1">
+                                <input type="text" id="cvv" name="cvv" placeholder="CVV" />
+                            </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="option2">
-        <p>Ödeme Yap</p>
-   </div>
 </body>
 </html>
