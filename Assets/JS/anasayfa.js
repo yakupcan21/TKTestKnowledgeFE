@@ -1,4 +1,3 @@
-// Function to fetch flight parameters from the database
 function fetchFlightParameters() {
   const url = 'http://localhost:8080/seeAllFlightList';
 
@@ -38,27 +37,51 @@ function fetchFlightParameters() {
         </div>`;
       });
 
-      elFlightListContainer.innerHTML = strFlights
-
-      // const departure_airport = flights.map(flight => flight.departure_airport);
-      // const arrival_airport = flights.map(flight => flight.arrival_airport);
-      // const date = flights.map(flight => flight.date);
-      // const time = flights.map(flight => flight.time);
-      // const price = flights.map(flight => flight.price);
-      // const flight_no = flights.map(flight => flight.flight_no);
-
-      // console.log('departure_airport:', departure_airport);
-      // console.log('arrival_airport:', arrival_airport);
-      // console.log('date:', date);
-      // console.log('time:', time);
-      // console.log('price:', price);
-      // console.log('flight_no:', flight_no);
-
-     
+      elFlightListContainer.innerHTML = strFlights;
     })
     .catch(error => {
       console.error('Error fetching flight parameters:', error);
     });
 }
+function selectFlight(element) {
+  const flights = document.querySelectorAll(".flight");
+  flights.forEach((flight) => {
+    flight.classList.remove("active");
+  });
+  element.classList.add("active");
+}
 
- fetchFlightParameters();
+function redirectToOdemePage() {
+  const selectedFlight = document.querySelector(".flight.active");
+  if (selectedFlight) {
+    const flightNo = selectedFlight.dataset.flightNo;
+    const departureAirport = selectedFlight.dataset.departureAirport;
+    const arrivalAirport = selectedFlight.dataset.arrivalAirport;
+    const date = selectedFlight.dataset.date;
+    const price = selectedFlight.dataset.price;
+
+    // Pass flight information to odeme.html using query parameters
+    window.location.href = `odeme.html?flightNo=${flightNo}&departureAirport=${departureAirport}&arrivalAirport=${arrivalAirport}&date=${date}&price=${price}`;
+  } else {
+    alert("Please select a flight before proceeding to Ödeme Yap.");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const flightItems = document.querySelectorAll(".flight");
+  const odemeButton = document.querySelector(".submit");
+
+  flightItems.forEach((flight) => {
+    flight.addEventListener("click", function () {
+      selectFlight(this);
+    });
+  });
+
+  odemeButton.addEventListener("click", function () {
+    redirectToOdemePage();
+  });
+
+  // Fetch flight parameters after the page is loaded
+  fetchFlightParameters();
+});
+

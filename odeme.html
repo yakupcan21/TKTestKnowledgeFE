@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ödeme</title>
     <link rel="stylesheet" href="Assets\CSS\anasayfa.css" />
-    <script type="text/javascript" language="javascript" src=".js"></script>
+    <script type="text/javascript" language="javascript" src="Assets\JS\odeme.js"></script>
   </head>
   <body>
     <div class="container-fluid bg-black">
@@ -20,51 +20,56 @@
         <div class="payment">
           <div class="style">
             <div class="id">
-              <div>T.C. Kimlik Numarası</div>
+              <label for="national_id">T.C. Kimlik Numarası</label>
                   <div class="idstyle">
-                      <input type="text" id="id" name="id" placeholder="T.C Kimlik numarınızı girin"/>
+                    <input type="text" id="national_id" name="national_id" placeholder="T.C Kimlik numarınızı girin"/>
                   </div>
             </div>
             <div class="price">
-              <div>Toplam Fiyat</div>
+              <label for="price">Toplam Fiyat</label>
                 <div class="style1">
                   <input type="text" id="price" name="price" placeholder="Toplam Fiyat" />
                     <div class="style2">
-                      <div>Taksit Sayısı</div>
-                      <input type="text" id="instalaltion" name="instalaltion" placeholder="Taksit Sayısı" />
-                    </div>
+                      <label for="installment_amount">Taksit Sayısı</label>
+                      <select id="installment_amount" name="installment_amount">
+                        <option value="1">1 Taksit</option>
+                        <option value="2">2 Taksit</option>
+                        <option value="3">3 Taksit</option>
+                        <option value="4">4 Taksit</option>
+                      </select>
                 </div>
             </div>
-                <div class="name">
-                  <div>Kart Sahibinin Adı</div>
+                <div class="cardholder_name">
+                  <label for="cardholder_name">Kart Sahibinin Adı</label>
                     <div class="style3">
-                      <input type="text" id="name" name="name" placeholder="Kart Sahibinin Adı" />
+                      <input type="text" id="cardholder_name" name="cardholder_name" placeholder="Kart Sahibinin Adı" />
                     </div>
                 </div>
-                <div class="card-no">
-                  <div>Kart Numarası</div>
+                <div class="card_no">
+                  <label for="card_no">Kart Numarası</label>
                     <div class="style4">
-                      <input type="text" id="card-no" name="card-no" placeholder="Kart Numarası" />
+                      <input type="text" id="card_no" name="card_no" placeholder="Kart Numarası" />
                     </div>
                 </div>
-                <div class="last-date">
-                  <div>Son Kullanım</div>
+                <div class="lastUseCard">
+                  <label for="lastUseCard">Son Kullanım</label>
                     <div class="style5">
-                      <input type="date" id="lastuse" name="lastuse" placeholder="Son Kullanım"/>
+                      <input type="date" id="lastUseCard" name="lastuse" placeholder="Son Kullanım"/>
                     </div>
                     <div class="cvv">
-                      <div>CVV</div>
+                      <label for="cvv">CVV</label>
                         <div class="style6">
                           <input type="text" id="cvv" name="cvv" placeholder="CVV" />
                         </div>
                     </div>
                 </div>
             <div>
-                <button class="submit">Ödeme Yap</button>
+              <button class="submit" onclick="saveValues()">Ödeme Yap</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="Assets\JS\odeme.js"></script>
   </body>
 </html>
