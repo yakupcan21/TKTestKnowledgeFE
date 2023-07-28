@@ -54,14 +54,16 @@ header img {
   font-size: 18px;
 }
 
+
+
 .flight-list-container .flight:hover {
   background-color: #95f0ac;
   cursor: pointer;
 }
 
-.flight-list-container .flight:active {
-  background-color: #00701e;
-  color: white;
+.flight-list-container .flight.active {
+  background-color: #045217;
+  color: #ffffff;
 }
 
 .flight-list-container .flight .departure {

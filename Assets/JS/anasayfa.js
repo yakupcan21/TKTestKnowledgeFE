@@ -38,18 +38,23 @@ function fetchFlightParameters() {
       });
 
       elFlightListContainer.innerHTML = strFlights;
+      elFlightListContainer.querySelectorAll('.flight').forEach(flight => {
+        flight.addEventListener('click', selectFlight.bind(this))
+      })
     })
     .catch(error => {
       console.error('Error fetching flight parameters:', error);
     });
 }
+
 function selectFlight(element) {
   const flights = document.querySelectorAll(".flight");
   flights.forEach((flight) => {
-    flight.classList.remove("active");
+    flight.classList.remove("active"); 
   });
-  element.classList.add("active");
+  element.target.classList.add("active"); 
 }
+
 
 function redirectToOdemePage() {
   const selectedFlight = document.querySelector(".flight.active");
@@ -60,10 +65,9 @@ function redirectToOdemePage() {
     const date = selectedFlight.dataset.date;
     const price = selectedFlight.dataset.price;
 
-    // Pass flight information to odeme.html using query parameters
     window.location.href = `odeme.html?flightNo=${flightNo}&departureAirport=${departureAirport}&arrivalAirport=${arrivalAirport}&date=${date}&price=${price}`;
   } else {
-    alert("Please select a flight before proceeding to Ödeme Yap.");
+    alert("Ödeme Yapmak için lütfen bir uçuş seçin.");
   }
 }
 
@@ -81,7 +85,5 @@ document.addEventListener("DOMContentLoaded", function () {
     redirectToOdemePage();
   });
 
-  // Fetch flight parameters after the page is loaded
   fetchFlightParameters();
 });
-
